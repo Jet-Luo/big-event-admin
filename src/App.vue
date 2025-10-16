@@ -1,5 +1,6 @@
 <script setup>
-import { useUserStore } from '@/stores/user.js'
+// import { useUserStore } from '@/stores/modules/user.js'
+import { useUserStore } from '@/stores'
 
 const userStore = useUserStore()
 </script>
