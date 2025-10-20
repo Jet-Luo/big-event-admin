@@ -16,7 +16,12 @@ export default defineConfig([
   {
     languageOptions: {
       globals: {
-        ...globals.browser
+        ...globals.browser,
+        // element-plus 已通过 unplugin-vue-components 和 unplugin-auto-import 插件自动按需引入
+        // 因此在 eslint 中声明为全局变量，避免未定义变量错误提示
+        ElMessage: 'readonly',
+        ElMessageBox: 'readonly',
+        ElLoading: 'readonly'
       }
     }
   },

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useUserStore } from '@/stores'
-import { ElMessage } from 'element-plus'
+// 因为使用了插件实现自动导入，所以不需要手动导入 ElMessage 组件
+// import { ElMessage } from 'element-plus'
 import router from '@/router/index.js'
 
 const baseURL = 'http://big-event-vue-api-t.itheima.net'
